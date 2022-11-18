@@ -99,8 +99,8 @@ nav ul {
 
 .item:hover {
 	box-shadow:
-	inset -3px -3px 10px rgba(255, 255, 255, 0.15),
-	inset 6px 6px 10px #000000;
+    inset -3px -3px 10px rgba(255, 255, 255, 0.15),
+    inset 6px 6px 10px #000000;
 }
 
 .details {
@@ -121,4 +121,41 @@ nav ul {
 	font-weight: 400;
 	color: #BABABA;
 	margin-top: 24px;
+}
+
+/* Smaller phone */
+@media screen and (width <= 480px) {
+  
+}
+
+/* Tablets & larger phone */
+@media screen and (width <= 768px) {
+  nav {
+    height: 50px;
+  }
+  nav .logo {
+    width: 120px;
+  }
+  nav ul {
+    gap: 40px;
+    font-size: 14px;
+  }
+
+  .items {
+    gap: 40px;
+  }
+
+  .item {
+    width: 240px;
+  }
+}
+
+/* Laptops, larger tablets in landscape, and small desktop */
+@media screen and (769px <= width <= 1279px) {
+  
+}
+
+/* Larger desktops and monitors */
+@media screen and (width >= 1280px) {
+  
 }
